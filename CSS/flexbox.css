@@ -1,0 +1,207 @@
+*,*::after, *::before{
+  box-sizing:border-box;
+}
+
+body{
+  margin-left: 10%;
+  margin-right:10%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+figcaption{
+  width:80%;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.2rem;
+}
+
+/* ------------- MAIN NAV -------------*/
+nav{
+  position:fixed;
+  top:0;
+  Left:0;
+}
+.site-logo-nav{
+  padding:3.5rem 8%;
+}
+.about-nav{
+    padding:5.6rem 8%;
+}
+.nav-container{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  /* For Viewing Flexbox:
+  background:green;
+  */
+}
+
+.site-logo-nav{
+  flex: 90 1 auto;
+  /* For Viewing Flexbox:
+  margin:0.5rem;
+  background:red; */
+
+}
+.about-nav{
+  flex: 1 1 auto;
+  /* For Viewing Flexbox:
+  margin:0.5rem;
+  background:red; */
+
+}
+/* ------------- SINGLE COLUMN -------------*/
+.one-column-container{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  width:auto;
+  max-width:40rem;
+  min-width:10rem;
+  /*-- for making flexbox visible:
+    background-color: red; */
+}
+  .one-column-item{
+    display: flex;
+    flex: 1 1 auto;
+  }
+  .one-column-text{
+    display: flex;
+    flex: 1 1 auto;
+    width:75%;
+  }
+  .one-column-image{
+    width:100%;
+    min-width: 300px;
+  }
+      .column-image{
+        height: auto;
+        width:100%;
+      }
+      .column-image-mockup{
+        height: auto;
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        width:60%;
+        max-width: 22rem;
+      }
+      .column-image-half-mockup{
+        height: auto;
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        width:60%;
+        max-width: 22rem;
+      }
+      .column-image-small{
+        height: auto;
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        width:60%;
+        max-width: 28rem;
+      }
+.hero-image{
+  margin-top: 12.5rem;
+}
+.iframe-container{
+  overflow: hidden;
+  padding-top: 49%;
+  position:relative;
+}
+.iframe-container iframe{
+  position:absolute;
+  border:0;
+  top: 0;
+  left:0;
+  height: 100%;
+  width:100%;
+}
+/* 4x3 Aspect Ratio */
+.iframe-container-4x3 {
+  padding-top: 75%;
+}
+/* ------------- HOME COLUMNS -------------*/
+.two-column-container{
+  display: flex;
+  flex-direction: row;
+
+}
+
+  .two-column-text{
+    flex-direction: column;
+    flex: 1 1 auto;
+    max-width:100rem;
+  }
+    .two-column-text-item{
+      flex: 1 1 auto;
+      margin-right: 1.4rem;
+      margin-top: 40vh;
+      width:auto;
+    }
+      .home-text{
+        max-width:28rem;
+        margin-bottom:1.8rem;
+        margin-top: 0.7rem;
+      }
+
+  .two-column-image{
+    flex: 1 1 auto;
+    width:80%;
+    min-width: 300px;
+    /*for making flexbox visible
+    background-color: blue; */
+  }
+    .home-hero-image{
+    position:fixed;
+    width:35%;
+    left:50%;
+    right:auto;
+    top:35vh;
+    min-width: 280px;
+    }
+
+/* ------------- Mobile Styling -------------*/
+
+/* ------------- Mobile inactive ------------- */
+.mobile-home-hero{
+  width:100%;
+  display:none;
+  margin-top: 1rem;
+  margin-bottom: 0.2rem;
+
+}
+
+/*
+ ------------- Mobile active ------------- */
+@media only screen and (max-width: 686px) {
+
+ .mobile-home-hero{
+   width:100%;
+   display:inline;
+   margin-top: 1rem;
+   margin-bottom: 0rem;
+
+ }
+
+ .two-column-image{
+   display:none;
+ }
+
+ .home-text{
+   margin-bottom:1.8rem;
+   margin-top: 0rem;
+ }
+
+ .two-column-text-item{
+   margin-right: 0rem;
+   margin-top: 26vh;
+ }
+}

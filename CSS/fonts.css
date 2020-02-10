@@ -1,0 +1,33 @@
+@font-face{
+  font-family: "Tiempos";
+  font-weight: bold;
+  font-style: normal;
+  src: url('../fonts/TiemposHeadline-Bold.otf') format("opentype")
+}
+
+@font-face{
+  font-family: "Futura";
+  font-weight: medium;
+  font-style: normal;
+  src: url('../fonts/Futura.ttf') format("truetype");
+}
+
+@font-face{
+  font-family: "Helvetica";
+  font-weight: medium;
+  font-style: normal;
+  src: url('../fonts/Helvetica.otf') format("opentype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: lighter;
+  font-style: normal;
+  src: url('../fonts/Inter-Light-Beta.otf') format("opentype");
+}
+@font-face {
+  font-family: "Inter";
+  font-weight: bold;
+  font-style: normal;
+  src: url('../fonts/Inter-Bold.otf') format("opentype");
+}
