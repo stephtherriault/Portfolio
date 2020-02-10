@@ -90,7 +90,7 @@ function scrollcheck2() {
     document.getElementById("hero-me").className = "home-hero-image hero-inactive";
     document.getElementById("hero-royal").className = "home-hero-image hero-inactive";
     document.getElementById("hero-James").className = "home-hero-image hero-inactive";
-      document.getElementById("hero-Shaw").className = "home-hero-image hero-active";
+      document.getElementById("hero-Shaw").className = "home-hero-image hero-inactive";
     document.getElementById("hero-PP").className = "home-hero-image hero-inactive";
   }
 
