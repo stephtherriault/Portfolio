@@ -67,31 +67,31 @@ function scrollcheck2() {
 
 }else if((scrollPercent>22)&&(scrollPercent<44)){
     document.getElementById("hero-me").className = "home-hero-image hero-inactive";
-      document.getElementById("hero-royal").className = "home-hero-image hero-active";
+    document.getElementById("hero-royal").className = "home-hero-image hero-inactive";
     document.getElementById("hero-James").className = "home-hero-image hero-inactive";
     document.getElementById("hero-Shaw").className = "home-hero-image hero-inactive";
-    document.getElementById("hero-PP").className = "home-hero-image hero-inactive";
+      document.getElementById("hero-PP").className = "home-hero-image hero-active";
 
   }else if((scrollPercent>44)&&(scrollPercent<68)){
     document.getElementById("hero-me").className = "home-hero-image hero-inactive";
-    document.getElementById("hero-royal").className = "home-hero-image hero-inactive";
-      document.getElementById("hero-James").className = "home-hero-image hero-active";
+      document.getElementById("hero-royal").className = "home-hero-image hero-active";
+    document.getElementById("hero-James").className = "home-hero-image hero-inactive";
     document.getElementById("hero-Shaw").className = "home-hero-image hero-inactive";
     document.getElementById("hero-PP").className = "home-hero-image hero-inactive";
 
   }else if((scrollPercent>68)&&(scrollPercent<90)){
     document.getElementById("hero-me").className = "home-hero-image hero-inactive";
     document.getElementById("hero-royal").className = "home-hero-image hero-inactive";
-    document.getElementById("hero-James").className = "home-hero-image hero-inactive";
-      document.getElementById("hero-Shaw").className = "home-hero-image hero-active";
+      document.getElementById("hero-James").className = "home-hero-image hero-active";
+    document.getElementById("hero-Shaw").className = "home-hero-image hero-inactive";
     document.getElementById("hero-PP").className = "home-hero-image hero-inactive";
 
   }else if(scrollPercent>90){
     document.getElementById("hero-me").className = "home-hero-image hero-inactive";
     document.getElementById("hero-royal").className = "home-hero-image hero-inactive";
     document.getElementById("hero-James").className = "home-hero-image hero-inactive";
-    document.getElementById("hero-Shaw").className = "home-hero-image hero-inactive";
-        document.getElementById("hero-PP").className = "home-hero-image hero-active";
+      document.getElementById("hero-Shaw").className = "home-hero-image hero-active";
+    document.getElementById("hero-PP").className = "home-hero-image hero-inactive";
   }
 
   if (document.documentElement.scrollTop < (700 - (window.innerWidth/1.8))) {
