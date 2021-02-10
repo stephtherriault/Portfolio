@@ -159,6 +159,7 @@ nav{
     /*for making flexbox visible
     background-color: blue; */
   }
+
     .home-hero-image{
     position:fixed;
     width:35%;
@@ -168,10 +169,25 @@ nav{
     min-width: 280px;
     }
 
+    .video-wrapper{
+      display: relative;
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      width: 100%;
+    }
+    .video-wrapper iframe{
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
 /* ------------- Mobile Styling -------------*/
 
 /* ------------- Mobile inactive ------------- */
-.mobile-home-hero{
+.mobile-home-hero, .video-wrapper-mobile{
   width:100%;
   display:none;
   margin-top: 1rem;
@@ -183,12 +199,28 @@ nav{
  ------------- Mobile active ------------- */
 @media only screen and (max-width: 686px) {
 
- .mobile-home-hero{
+
+ .mobile-home-hero, .video-wrapper-mobile{
    width:100%;
    display:inline;
-   margin-top: 1rem;
-   margin-bottom: 0rem;
-
+   margin-top: 0.5rem;
+   margin-bottom: 0.5rem;
+ }
+ .video-wrapper-mobile iframe{
+   position: absolute;
+   top:0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+ }
+ .video-wrapper-mobile{
+   display: flex;
+   position: relative;
+   padding-bottom: 56.25%;
+   height: 0;
+   width: 100%;
+   margin-top: 0rem;
+   margin-bottom: 1rem;
  }
 
  .two-column-image{
